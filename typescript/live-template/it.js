@@ -1,3 +1,4 @@
-it('should do something', () => {
+it('should $description$', () => {
   expect(true).toBeTruthy();
+$END$
 });
