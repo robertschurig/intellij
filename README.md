@@ -1,7 +1,7 @@
 # Collection of IntelliJ Templates and Live-Templates
 
 ## Templates
-you will find the templates [here](/template)
+you will find the templates [here](typescript//template)
 - Go to `settings`
 - Search for `templates` and select `File and Code Templates`
 - Create new template
@@ -10,10 +10,10 @@ you will find the templates [here](/template)
 - Copy/paste the code 
 
 ## Live Templates
-you will find the live-templates [here](/live-template)
+you will find the live-templates [here](typescript//live-template)
 - Go to `settings`.
 - Search for `live templates`.
 - Create new Template Group
 - Select the new Group
-- Copy/paste the code from [templates.xml](/live-template/templates.xml)
+- Copy/paste the code from [templates.xml](typescript/live-template/templates.xml)
 
