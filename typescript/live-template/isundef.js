@@ -1,0 +1,1 @@
+typeof $VARIABLE_NAME$ === 'undefined'$END$

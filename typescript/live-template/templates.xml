@@ -1,13 +1,56 @@
-<template name="fnc" value="$FN$($PARAMS$): $RETURN_VALUE$ {&#10;    $END$&#10;};" description="create typescript function" toReformat="false" toShortenFQNames="true">
-    <variable name="FN" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="RETURN_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+<template name="clog" value="console.log($END$);" description="create console.log()" toReformat="true" toShortenFQNames="true">
     <context>
+        <option name="JAVA_SCRIPT" value="true" />
         <option name="TypeScript" value="true" />
     </context>
 </template>
-<template name="it" value="it('should do something', () =&gt; {&#10;    expect(true).toBeTruthy();&#10;});" description="create new jasmin 'it' test" toReformat="true" toShortenFQNames="true">
+<template name="fnc" value="$FN$($PARAM$): $RETURN_VALUE$ {&#10;    $END$&#10;};" description="create typescript function" toReformat="true" toShortenFQNames="true">
+<variable name="FN" expression="camelCase(String)" defaultValue="" alwaysStopAt="true" />
+<variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="RETURN_VALUE" expression="" defaultValue="void" alwaysStopAt="true" />
 <context>
+    <option name="TypeScript" value="true" />
+</context>
+</template>
+<template name="isdef" value="typeof $VARIABLE_NAME$ !== 'undefined'$END$" description="check if variable is defined" toReformat="true" toShortenFQNames="true">
+<variable name="VARIABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="TypeScript" value="true" />
+</context>
+</template>
+<template name="isundef" value="typeof $VARIABLE_NAME$ === 'undefined'$END$" description="check if variable is undefined" toReformat="true" toShortenFQNames="true">
+<variable name="VARIABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="TypeScript" value="true" />
+</context>
+</template>
+<template name="it" value="it('should $description$', () =&gt; {&#10;    expect(true).toBeTruthy();&#10;    $END$&#10;});" description="create new jasmin 'it' test" toReformat="true" toShortenFQNames="true">
+<variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="TypeScript" value="true" />
+</context>
+</template>
+<template name="letn" value="let $NAME$: number = $VALUE$;&#10;$END$" description="creates number variable" toReformat="true" toShortenFQNames="true">
+<variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="TypeScript" value="true" />
+</context>
+</template>
+<template name="lets" value="let $NAME$: string = '$VALUE$';&#10;$END$" description="create string variable" toReformat="true" toShortenFQNames="true">
+<variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="TypeScript" value="true" />
+</context>
+</template>
+<template name="p" value="$PROP$: $VALUE$,$END$" description="create property" toReformat="true" toShortenFQNames="true">
+<variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
     <option name="TypeScript" value="true" />
 </context>
 </template>
