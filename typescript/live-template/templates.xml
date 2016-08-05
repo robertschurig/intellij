@@ -1,5 +1,13 @@
-<template name="it" value="it('should do something', () =&gt; {&#10;    expect(true).toBeTruthy();&#10;});" description="create new jasmin 'it' test" toReformat="true" toShortenFQNames="true">
+<template name="fnc" value="$FN$($PARAMS$): $RETURN_VALUE$ {&#10;    $END$&#10;};" description="create typescript function" toReformat="false" toShortenFQNames="true">
+    <variable name="FN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
         <option name="TypeScript" value="true" />
     </context>
+</template>
+<template name="it" value="it('should do something', () =&gt; {&#10;    expect(true).toBeTruthy();&#10;});" description="create new jasmin 'it' test" toReformat="true" toShortenFQNames="true">
+<context>
+    <option name="TypeScript" value="true" />
+</context>
 </template>

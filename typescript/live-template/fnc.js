@@ -1,0 +1,3 @@
+$FN$($PARAMS$): $RETURN_VALUE$ {
+  $END$
+};
